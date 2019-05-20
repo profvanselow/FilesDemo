@@ -12,9 +12,9 @@ void writeToFile();
 void readOneLine();
 void writeAgain();
 void readFile();
-void writeLine(std::string&);
+void writeLine(char*);
 // https://stackoverflow.com/questions/5060137/passing-as-const-and-by-reference-worth-it
-void writeLineToFile(std::string&, std::string&);
+void writeLineToFile(char*, char*);
 void writeAppend();
 
 #endif //FILESDEMO_FILESDEMO_H

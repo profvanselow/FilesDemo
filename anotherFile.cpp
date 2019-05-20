@@ -8,7 +8,7 @@
 
 #include "FilesDemo.h"
 
-void writeLine(const std::string& lineToWrite) {
+void writeLine(char* lineToWrite) {
     std::ofstream myFile;
     myFile.open("example.txt");
     myFile << lineToWrite << "\n";

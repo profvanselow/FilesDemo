@@ -21,8 +21,9 @@ int main() {
     readOneLine();
     writeAgain();
     readFile();
-    writeLine("Line to write");
-    writeLineToFile("line", "example.txt");
+    // https://stackoverflow.com/questions/1524356/c-deprecated-conversion-from-string-constant-to-char/4502036
+    writeLine((char *)"Line to write");
+    writeLineToFile((char *)"line", (char *)"example.txt");
     writeAppend();
     return 0;
 }
@@ -67,7 +68,7 @@ void readFile() {
 
 
 
-void writeLineToFile(const std::string& lineToWrite, const std::string& fileName) {
+void writeLineToFile(char* lineToWrite, char* fileName) {
     std::ofstream myFile;
     myFile.open(fileName);
     myFile << lineToWrite << "\n";
