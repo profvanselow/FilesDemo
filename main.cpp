@@ -13,6 +13,8 @@
 #include <fstream>
 #include "FilesDemo.h"
 
+// https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/
+
 int main() {
     std::cout << "File and Function Demo" << std::endl;
     writeToFile();
