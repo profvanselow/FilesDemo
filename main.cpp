@@ -29,7 +29,7 @@ int main() {
 }
 
 void writeToFile() {
-    // http://www.cplusplus.com/doc/oldtutorial/files/
+    // http://www.cplusplus.com/doc/tutorial/files/
     std::ofstream myFile;
     myFile.open("example.txt");
     myFile << "writeToFile called. Writing this to example.txt" << "\n";
